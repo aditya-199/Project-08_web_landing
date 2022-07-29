@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    --btn-color: #FFFFFF;
+    --nav-color: #2d1c49;
+    --h1-color: #6940a9;
+    --p-color:#1e1230; 
+    overflow-x: hidden;
+}
+
+button{
+    background-image: linear-gradient(to right ,#965CF2,#DE7CE3);
+    border-radius: 4rem;
+    border: none;
+    color: var(--btn-color);
+}
+
+h5{
+    color: var(--nav-color);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h1{
+    color: var(--h1-color);
+}
+h4{
+    color: var(--p-color);
+}
+
+.main-div{
+    padding: 2rem 15rem;
+    position: relative;
+}
+.main-div::after{
+    content: url(/images/backcover.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform: translate(91px, -168px)
+}
+.main-div nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+}
+
+nav img{
+    width: 10%;
+    /* height: inherit; */
+}
+
+.nav-items{
+    display: flex;
+    height: inherit;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.signin-btn{
+    padding: 0.5rem 2rem;
+    font-weight: 650;
+    
+}
+
+
+.intro-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-image: linear-gradient(to right ,#965CF2,#DE7CE3); */
+    align-items: flex-start;
+}
+
+.intro-section h1{
+    width: 45rem;
+    line-height: 8rem;
+    font-size: 7rem;
+    margin-bottom: 4rem;
+}
+
+.intro-section h4{
+    width: 35rem;
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+}
+
+.left-section{
+    display: flex;
+    /* margin-top:  */
+    width: 50%;
+    height: 60rem;
+    margin-top: 12rem;
+    align-items: flex-start;
+
+    flex-direction: column;
+    
+}
+
+.left-section .learn-more-btn{
+    padding: 2rem 5rem;
+    font-weight: 650;
+    font-size: 3rem;
+}
+
+.imgs-div{
+    height: 60rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imgs-div img{
+    position: absolute;
+}
+
+.imgs-div img:first-child{
+    left: -33px;
+    bottom: 107px;
+    transform: scale(0.8);
+}
+
+.imgs-div img:nth-child(2){
+    left: 20px;
+    bottom: 193px;
+}
+
+.imgs-div img:last-child{
+    /* width: 1re; */
+    height: 60rem;
+    position: absolute;
+    top: -23px; 
+}
